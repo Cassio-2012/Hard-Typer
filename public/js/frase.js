@@ -14,7 +14,7 @@ function fraseAleatoria() {
 
   $("#spinner").toggle();
 
-  $.get("http://localhost:3000/frases", trocaFrase)
+  $.get("http://localhost:3001/frases", trocaFrase)
   .fail(function(){
 
     $('#erro').toggle();
@@ -48,7 +48,7 @@ function buscaFrase() {
   var fraseID = $("#frase-id").val();
   var dados = {id: fraseID};
 
-  $.get("http://localhost:3000/frases", dados, setaFrase).
+  $.get("http://localhost:3001/frases", dados, setaFrase).
   fail(function(){
 
     $('#erro').toggle();

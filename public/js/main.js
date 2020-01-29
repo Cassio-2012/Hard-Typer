@@ -8,7 +8,13 @@ $(document).ready(function(){
   inicializaMarcadores();
   atualizaPlacar();
   $("#botao-reiniciar").click(reiniciaJogo);
-
+  $(".tooltip").tooltipster({
+        trigger: "custom"
+  });
+  $("#usuarios").selectize({
+    create: true,
+    sortField: 'text'
+  });
 });
 
 
